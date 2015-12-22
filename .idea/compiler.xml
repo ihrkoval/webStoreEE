@@ -25,5 +25,8 @@
         <module name="Store" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Store" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

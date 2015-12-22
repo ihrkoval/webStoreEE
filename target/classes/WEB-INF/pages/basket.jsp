@@ -32,30 +32,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="#">Project name</a>
+      <a class="brand" href="/">Мой магазин</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
+          <li class="active"><a href="/">Главная</a></li>
+          <li><a href="#about">Доставка</a></li>
+          <li><a href="#contact">Контакты</a></li>
         </ul>
+
         <sec:authorize access="isAnonymous()">
           <c:url value="/j_spring_security_check" var="loginUrl" />
           <form class="navbar-form pull-right" action="${loginUrl}" method="post">
-            <input class="span2" type="text" name="j_username" placeholder="Email">
-            <input class="span2" type="password" name="j_password" placeholder="Password">
+            <input class="span2" type="text" name="j_username" placeholder="Email or admin">
+            <input class="span2" type="password" name="j_password" placeholder="Password or 1234">
             <button type="submit" class="btn">Войти</button>
             <a href="/reg">Регистрация</a>
           </form>
@@ -63,13 +52,13 @@
         <sec:authorize access="isAuthenticated()">
           <form class="navbar-form pull-right">
           <p class="text-info">Ваш логин: <sec:authentication property="principal.username" />
-          <a class="btn btn-small btn-primary" href="<c:url value="/basket" />" role="button">кабинет</a>
+          <a class="btn btn-small btn-primary" href="<c:url value="/basket" />" role="button">кабинет${inbasket}</a>
           <a class="btn btn-mini btn-danger" href="<c:url value="/logout" />" role="button">Выйти</a>
           <sec:authorize access="hasRole('ADMIN')">
-            <a class="btn btn-inverse" href="<c:url value="/orders" />" role="button">Админка</a>
+            <a class="btn btn-inverse" href="<c:url value="/orders" />" role="button">Админка</a></form>
           </sec:authorize>
-          </p>
-          </form>
+
+
 
         </sec:authorize>
 

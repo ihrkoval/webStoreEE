@@ -43,8 +43,6 @@
         <td><b><a href="/orders">Заказы  (${users.size()})</a></b></td>
         <td><b><a href="/product">Товары</a></b></td>
         <td><b><a href="/users">Пользователи</a></b></td>
-        <td><b>Цена</b></td>
-        <td><b>удалить</b></td>
       </tr>
       </thead>
     </table>
@@ -59,7 +57,6 @@
             <td>${u.orders[0].name}</td>
             <td>${u.orders[0].price} грн.</td>
             <td><a href="/confirmorder/${u.id}" class="btn btn-mini btn-primary disabled">подтвердить</a></td>
-            <td><a href="/orders/delete/${u.orders[0].id}" class="btn btn-mini btn-primary disabled">удалить</a></td>
 
           </tr>
         </c:forEach>

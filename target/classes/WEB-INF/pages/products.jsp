@@ -45,8 +45,6 @@
         <td><b><a href="/orders">Заказы  (${users.size()})</a></b></td>
         <td><b><a href="/product">Товары</a></b></td>
         <td><b><a href="/users">Пользователи</a></b></td>
-        <td><b>Цена</b></td>
-        <td><b>удалить</b></td>
       </tr>
       </thead>
     </table>
