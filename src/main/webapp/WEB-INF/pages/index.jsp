@@ -82,7 +82,7 @@
         <p>Описание блаблаблабла блабла блаблабла блаблаблабла блабла бла блаблабла РЕклама блаблаблабла блаблабла блаблабла
             блаблабла блаблаблабла блаблаблаблаблаблаблабла блаблаблабла блаблаблаблабла блаблабла АКЦИЯ! блаблаблабла
             блаблаблаблаблабла блаблаблабла блаблаблабла блаблаблаблаблабла блаблабла бла</p>
-        <p><a href="#" class="btn btn-primary btn-large">Подробнее &raquo;</a></p>
+        <p><a href="https://github.com/antonkarasique/Store/tree/master/src/main" class="btn btn-primary btn-large btn-success">Исходники &raquo;</a></p>
     </div>
 
     <!-- Example row of columns -->
@@ -90,7 +90,7 @@
 
     <div class="row">
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h2>Категории</h2> <b class="caret"></b></a>
+            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Категории <b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li><a href="/">Все</a></li>
                 <% ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");

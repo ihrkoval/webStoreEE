@@ -72,7 +72,7 @@
 
 
   <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h2>категории</h2><b class="caret"></b></a>
+    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">категории<b class="caret"></b></a>
     <ul class="dropdown-menu">
       <li><a href="/orders">Все</a></li>
       <% ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("product");
