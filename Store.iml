@@ -14,8 +14,8 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/store/AppConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/java/store/config/SecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/store/config/AppConfig.java</file>
         </fileset>
       </configuration>
     </facet>
