@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: org.postgresql:postgresql:9.2">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.2/postgresql-9.2.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.2/postgresql-9.2-javadoc.jar!/" />
     </JAVADOC>
