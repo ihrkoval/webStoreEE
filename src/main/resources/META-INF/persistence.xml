@@ -2,15 +2,16 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
-    <persistence-unit name="storeJPA" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="storeJPA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
         <properties>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-46-137-72-123.eu-west-1.compute.amazonaws.com:5432/dd83l0aj871sbo"/>
+            <property name="javax.persistence.jdbc.user" value="bphfqzwddicpdx" />
+            <property name="javax.persistence.jdbc.password" value="Aj85073DimgvUyWShQCJ_mf6mG" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-            <!-- value="create" to build a new database on each run; value="update" to modify an existing database; value="create-drop" means the same as "create" but also drops tables when Hibernate closes; value="validate" makes no changes to the database -->
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
-            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
-            <property name="hibernate.connection.charSet" value="UTF-8"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>
