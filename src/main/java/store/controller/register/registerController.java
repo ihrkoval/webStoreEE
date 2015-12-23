@@ -52,7 +52,7 @@ public class registerController {
         );
         User u = regDAO.userAdd(usr); //add new user
         if (u == null)
-            return new ModelAndView("lk");
+            return new ModelAndView("index");
         return new ModelAndView("reg");
 
     }

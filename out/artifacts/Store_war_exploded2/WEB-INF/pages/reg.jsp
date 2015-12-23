@@ -66,7 +66,7 @@
     <div class="form-group"><input type="text" class="input-block-level" name="email" placeholder="e-mail"></div>
     <div class="form-group"><input type="password" class="input-block-level" name="password" placeholder="пароль"></div>
 
-    <div class="form-group"><input type="submit" class="btn btn-large btn-primary" value="зарегестрироваться"></div>
+    <div class="form-group"><input type="submit" class="btn btn-large btn-primary" value="зарегистрироваться"></div>
   </form>
 </div>
 </body>
